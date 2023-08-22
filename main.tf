@@ -1,13 +1,13 @@
 provider "aws" {
-  region     = "us-east-2"
-  access_key = ""
-  secret_key = ""
+  region     = "ap-southeast-2"
+  access_key = "AKIAWZIUDIQS2LSBLDMQ"
+  secret_key = "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"
 }
 
 #1 -this will create a S3 bucket in AWS
 resource "aws_s3_bucket" "terraform_state_s3" {
   #make sure you give unique bucket name
-  bucket = "terraform-teknobucket1-state" 
+  bucket = "terraform-vijaya-bucket" 
   force_destroy = true
 # Enable versioning to see full revision history of our state files
   versioning {
